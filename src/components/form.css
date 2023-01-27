@@ -1,0 +1,80 @@
+.container_order {
+    width: 500px;
+    margin: 0 auto;
+    border: solid 2px black;
+}
+
+.order_header {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#bottom_header {
+    text-align: left;
+}
+
+.image_form {
+    width: 500px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.specialities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    flex-direction: column;
+}
+
+#name-input {
+    width: 200px;
+    border: solid 2px black;
+    padding: 4px 4px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#size-dropdown {
+    width: 210px;
+    border: solid 2px black;
+    padding: 4px 4px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.materials {
+    margin-left: 10px;
+
+}
+
+#special-text {
+    width: 200px;
+    border: solid 2px black;
+    padding: 4px 4px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.grey_spc {
+    background-color: #dddddd;
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+
+.submit_button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    margin: 10px 120px;
+    text-decoration: none;
+    padding: 5px 25px;
+    font-size: 25px;
+}
+
+.submit_button:hover {
+    background-color: white;
+    color: black;
+    transition: 2s;
+}

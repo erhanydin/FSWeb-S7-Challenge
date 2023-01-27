@@ -1,30 +1,37 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import './App.css'
 import Form from "./components/Form";
 import Home from "./components/Home";
+import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+import resim1 from './imgs/Pizza.png';
 
 const App = () => {
 
-  
+
 
   return (
     <>
-      <h1>Teknolojik Yemekler</h1>
       <div className="container">
-        <h2 className="container-header">LAMBDA EATS</h2>
         <Router>
           <div className="app">
-            <Link to="/">Home</Link>
-            <Link id="order-pizza" to="/pizza">Order</Link>
+            <h2 className="header">LAMBDA EATS</h2> 
 
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/pizza" component={Form} />
-            </Switch>
+            <div className="links">
+              <Link to="/" className="buttons">Home</Link>
+              <Link id="order-pizza" to="/pizza" className="buttons">Order</Link>
+            </div>
           </div>
+
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/pizza" component={Form} />
+          </Switch>
+
+
         </Router>
       </div>
+
+        
     </>
   );
 };

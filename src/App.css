@@ -24,9 +24,41 @@
   color: white;
 }
 
+.header {
+  color: red;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.links {
+  margin-top: 25px;
+}
+
 .App-link {
   color: #61dafb;
 }
+
+.buttons {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 5px 25px;
+  font-size: 25px;
+}
+
+.buttons:hover {
+  background-color: black;
+  color: white;
+  transition: 2s;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
